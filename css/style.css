@@ -1,0 +1,790 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ CSS Reset */
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font: normal 400 1rem/1.618 Roboto;
+	color: rgba(60,60,60,1);
+	text-decoration: none;
+	/*background-color: rgba(0,0,0,.35);*/
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Global Styles */
+
+html {
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	height: 100%;
+	font: normal 400 1rem/1.618 Roboto;
+	background-color: #d5d5d5;
+}
+
+h2 span {
+	font: normal 700 2rem/1.618 "Roboto";
+	text-transform: uppercase;
+	display: block;
+	color: rgba(255,255,255,1);
+}
+
+h2 {
+	font: normal 300 1.25rem/1.618 "Roboto Condensed";
+	text-transform: uppercase;
+}
+
+h3 {
+	font: normal 300 1.25rem/1.618 "Roboto Condensed";
+}
+
+h4 {
+	font: normal 900 1.125rem/1.618 Roboto;
+	text-transform: uppercase;
+}
+
+
+.pagedownbutton {
+	display: inline-block;
+	margin: .625rem 0 .625rem 0;
+	padding: .3125rem .75rem;
+	border-radius: 1.875rem;
+	font: normal 700 .8rem/1.40625rem Roboto;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+	background-color: rgba(67, 116, 156, 1);
+}
+
+.pagedownarrow {
+	display: block !important;
+	color: #fff !important;
+	text-align: center;
+	text-shadow: 0 0 .125rem rgba(0, 0, 0, .2);
+}
+
+.headinglines {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	font: normal 700 .8rem/1.40625rem Roboto;
+	text-transform: uppercase;
+}
+
+.headinglines:before,
+.headinglines:after {
+	background-color: rgba(67, 116, 156, 1);
+	content: "";
+	position: relative;
+	display: inline-block;
+	height: 1px;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.headinglines:before {
+	margin-left: -100%;
+	margin-right: .625rem;
+}
+
+.headinglines:after {
+	margin-left: .625rem;
+	margin-right: -100%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header & Nav Styles */
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(67, 116, 156, 1);
+}
+
+.navlogo {
+	max-height: 100%;
+	max-width: 100%;
+	height: 2.5rem;
+	width: auto;
+	padding: .3125rem .625rem .3125rem .625rem;
+	float: left;
+}
+
+.brandtype {
+	font: normal 900 1.25rem/2.5rem Roboto;
+	float: left;
+	vertical-align: middle;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+	/*background-color: rgba(241, 40, 74, 0.5);*/
+}
+
+#navpull {
+	display: inline !important;
+	float: right;
+	padding: 0 .5rem 0 .5rem;
+	margin: 0 0 0 0;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	color: rgba(255,255,255,1);
+	/*background-color: rgba(61, 255, 236, 0.6);*/
+}
+
+nav {
+	position: fixed;
+	top: 2.5rem;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: rgba(198, 212, 223, 1);
+	display: none;
+}
+
+ul li {
+	display: inline;
+	/*background-color: rgba(74, 241, 167, 0.5);*/
+}
+
+nav ul li a {
+	display: inline-block;
+	padding: .2rem .3rem .2rem .3rem;
+	font: normal 700 .75rem/1.40625rem "Roboto";
+	text-transform: uppercase;
+	color: rgba(67, 116, 156, 1);
+	text-decoration: none;
+	/*background-color: pink;*/
+}
+
+nav li a.active {
+	color: rgba(255,255,255,1);
+	background-color: rgba(67, 116, 156, 1);
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Landing Page Styles */
+
+#home {
+	display: table;
+	height: auto;
+	width: 100%;
+	padding: 0 .625rem 0 .625rem;
+	/*background-color: rgba(65, 63, 58, 1);*/
+	background: url('../img/deck4.jpg') no-repeat 60% 60%;
+	background-size: cover;
+
+
+}
+
+
+@media only screen and (min-height: 15em) {
+	#home {
+		height: 100%;
+	}
+}
+
+#home h1, #home h2 {
+	text-shadow: .125rem .125rem .125rem rgba(0,0,0,.5);
+	color: rgba(255,255,255,1);
+}
+
+.center {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ About Page Styles*/
+
+#about {
+	background-color: rgba(230,230,230,1);
+	display: table;
+	width: 100%;
+	text-align: center;
+}
+
+#about h4, #about span{
+	color: rgba(67, 116, 156, 1);
+}
+
+
+
+
+
+#about h3 {
+	text-align: center;
+}
+
+#about p {
+	text-align: center;
+	margin-bottom: .625rem;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Project Page Styles*/
+
+#projects {
+	display: table;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(245,245,245,1);
+	text-align: center;
+}
+
+
+.projecttitle{
+	color: rgba(67, 116, 156, 1);
+	/*background-color: rgba(255, 0, 156, 1);*/
+}
+
+
+.projectlink{
+	display: block;
+	font: normal 400 1rem/1.618 Roboto;
+	/*background-color: rgba(255, 0, 156, 1);*/
+}
+
+.projectlink:hover {
+	text-decoration: underline;
+}
+
+
+.projectlinkbutton {
+	display: inline-block;
+	float: right;
+	font: normal 400 .8rem/1.6875rem Roboto;
+	text-transform: uppercase;
+	padding: 0 .625rem;
+	border-radius: .3125rem;
+	background-color: rgba(60,60,60,1);
+}
+
+.projectgithub {
+	float: right;
+	color: rgba(67, 116, 156, 1);
+}
+
+.taglist {
+	padding: .125rem;
+}
+.taglist li{
+	font: normal 400 .75rem/1.618 Roboto;
+	display: inline;
+	background-color: rgba(67, 116, 156, 1);
+	color: rgba(255,255,255,1);
+	border-radius: .1875rem;
+	padding: .125rem .25rem;
+	margin: .125rem;
+}
+
+
+.projectimg {
+	width: 100%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Contact Page Styles*/
+
+#contact {
+	display: table;
+	width: 100%;
+	height: auto;
+	background-color: rgba(67, 116, 156, 1);
+	text-align: center;
+}
+
+#contact hr {
+	height: 1px;
+	background-color: rgba(0,0,0,.2);
+	margin: .625rem 0 0 0;
+}
+
+#contact h4 {
+	color: #fff;
+}
+
+#contact .headinglines {
+	color: rgba(255,255,255,1);
+}
+
+#contact .headinglines:before, #contact .headinglines:after{
+	background-color: rgba(0,0,0,.2);
+}
+
+#contactform input[type=text] {
+	display: block;
+	width: 100%;
+	padding: .3125rem;
+	color: rgba(34, 34, 34, 1);
+	border-radius: .3125rem;
+}
+
+#contactform textarea {
+	display: block;
+	width: 100%;
+	height: 6rem;
+	padding: .3125rem;
+	color: rgba(34, 34, 34, 1);
+	border-radius: .3125rem;
+}
+
+#contactform label {
+	display: block;
+	font: normal 700 .8rem/1.40625rem Roboto;
+	margin: .625rem 0 0 0;
+	text-align: left;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#submit {
+	display: block;
+	width: 100%;
+	padding: .3125rem;
+	font: normal 700 .8rem/1.40625rem Roboto;
+	text-transform: uppercase;
+	margin: .9375rem 0 0 0;
+	background-color: rgba(198, 212, 223, 1);
+	color: rgba(67, 116, 156, 1);
+	border-radius: .3125rem;
+}
+
+
+.sociallinks {
+	display: inline-block;
+	height: 2.5rem;
+	width: 2.5rem;
+	background: rgba(0,0,0,.3);
+	border-radius: 1.25rem;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sociallinks span {
+	font-size: 1.25rem;
+	line-height: 2.5rem;
+	color: rgba(255,255,255,1);
+}
+
+.copyright {
+	font: normal 400 .8rem/1.40625rem Roboto;
+	color: rgba(0,0,0,.3);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Grid System Skeleton*/
+
+*,
+*:after,
+*:before {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+/* Set the width of the row to what you like */
+.row {
+	width: 100%;
+	max-width:75rem; /* max Width of row, Change to what you like */
+	margin:0 auto;
+}
+
+/* Nested row 1 level down */
+/* Change the gutter if you like, currently set as 0.65em */
+.row .row {
+	margin-left: -0.65rem; /* minus left gutter for nested rows */
+	margin-right: -0.65rem; /* minus Right gutter for nested rows */
+	width: auto;
+}
+
+[class*='cute-'] {
+	float: left;
+	position: relative;
+	padding: 0.65rem; /* top, bottom, left and right padding for columns */
+	width:100%;
+}
+
+/* Remove this if you want the columns to float left when they overflow the row */
+
+[class*='cute-']:last-of-type {
+	float: right;
+}
+
+/* Clearfix */
+.row:after, .group:after, .clearfix:after {
+	content: "";
+	display: table;
+	clear: both
+}
+.container:before,
+.container:after {
+	display: table;
+	content: " ";
+}
+
+.container:after {
+	clear: both;
+}
+
+.left {
+	float: left !important;
+}
+
+.right {
+	float: right !important;
+}
+
+/* Grid classes for phone screen widths  */
+@media only screen {
+	.cute-1-phone { width: 8.3333333333333%; }
+	.cute-2-phone { width: 16.666666666667%; }
+	.cute-3-phone { width: 25%; }
+	.cute-4-phone { width: 33.333333333333%; }
+	.cute-5-phone { width: 41.666666666667%; }
+	.cute-6-phone { width: 50%; }
+	.cute-7-phone { width: 58.333333333333%; }
+	.cute-8-phone { width: 66.666666666667%; }
+	.cute-9-phone { width: 75%; }
+	.cute-10-phone { width: 83.333333333333%; }
+	.cute-11-phone { width: 91.666666666667%; }
+	.cute-12-phone { width: 100%; }
+
+	/* offset for phone size */
+	.cute-0-phone-offset { margin: 0; }
+	.cute-1-phone-offset { margin-left: 8.3333333333333%; }
+	.cute-2-phone-offset { margin-left: 16.666666666667%; }
+	.cute-3-phone-offset { margin-left: 25%; }
+	.cute-4-phone-offset { margin-left: 33.333333333333%; }
+	.cute-5-phone-offset { margin-left: 41.666666666667%; }
+	.cute-6-phone-offset { margin-left: 50%; }
+	.cute-7-phone-offset { margin-left: 58.333333333333%; }
+	.cute-8-phone-offset { margin-left: 66.666666666667%; }
+	.cute-9-phone-offset { margin-left: 75%; }
+	.cute-10-phone-offset { margin-left: 83.333333333333%; }
+	.cute-11-phone-offset { margin-left: 91.666666666667%; }
+
+	.cute-1-phone-push { left: 8.3333333333333%; }
+	.cute-2-phone-push { left: 16.666666666667%; }
+	.cute-3-phone-push { left: 25%; }
+	.cute-4-phone-push { left: 33.333333333333%; }
+	.cute-5-phone-push { left: 41.666666666667%; }
+	.cute-6-phone-push { left: 50%; }
+	.cute-7-phone-push { left: 58.333333333333%; }
+	.cute-8-phone-push { left: 66.666666666667%; }
+	.cute-9-phone-push { left: 75%; }
+	.cute-10-phone-push { left: 83.333333333333%; }
+	.cute-11-phone-push { left: 91.666666666667%; }
+
+	.cute-1-phone-pull { right: 8.3333333333333%; }
+	.cute-2-phone-pull { right: 16.666666666667%; }
+	.cute-3-phone-pull { right: 25%; }
+	.cute-4-phone-pull { right: 33.333333333333%; }
+	.cute-5-phone-pull { right: 41.666666666667%; }
+	.cute-6-phone-pull { right: 50%; }
+	.cute-7-phone-pull { right: 58.333333333333%; }
+	.cute-8-phone-pull { right: 66.666666666667%; }
+	.cute-9-phone-pull { right: 75%; }
+	.cute-10-phone-pull { right: 83.333333333333%; }
+	.cute-11-phone-pull { right: 91.666666666667%; }
+
+	.center-phone {
+		margin-left: auto;
+		margin-right:auto;
+		float:none !important;
+	}
+	.uncenter-phone {
+		margin-left: 0;
+		margin-right: 0;
+		float:left !important;
+	}
+	.uncenter-phone.right {
+		float:right !important;
+	}
+
+	[class*='cute-'].phone-reset {
+		margin-left: 0;
+		margin-right: 0;
+		left: auto;
+		right: auto;
+		float: left; }
+}
+/* Grid classes for tablet screen widths  */
+@media only screen and (min-width: 48em) {
+	.cute-1-tablet { width: 8.3333333333333%; }
+	.cute-2-tablet { width: 16.666666666667%; }
+	.cute-3-tablet { width: 25%; }
+	.cute-4-tablet { width: 33.333333333333%; }
+	.cute-5-tablet { width: 41.666666666667%; }
+	.cute-6-tablet { width: 50%; }
+	.cute-7-tablet { width: 58.333333333333%; }
+	.cute-8-tablet { width: 66.666666666667%; }
+	.cute-9-tablet { width: 75%; }
+	.cute-10-tablet { width: 83.333333333333%; }
+	.cute-11-tablet { width: 91.666666666667%; }
+	.cute-12-tablet { width: 100%; }
+
+	/* offset for tablet screen widths */
+	.cute-0-tablet-offset { margin: 0; }
+	.cute-1-tablet-offset { margin-left: 8.3333333333333%; }
+	.cute-2-tablet-offset { margin-left: 16.666666666667%; }
+	.cute-3-tablet-offset { margin-left: 25%; }
+	.cute-4-tablet-offset { margin-left: 33.333333333333%; }
+	.cute-5-tablet-offset { margin-left: 41.666666666667%; }
+	.cute-6-tablet-offset { margin-left: 50%; }
+	.cute-7-tablet-offset { margin-left: 58.333333333333%; }
+	.cute-8-tablet-offset { margin-left: 66.666666666667%; }
+	.cute-9-tablet-offset { margin-left: 75%; }
+	.cute-10-tablet-offset { margin-left: 83.333333333333%; }
+	.cute-11-tablet-offset { margin-left: 91.666666666667%; }
+
+	.cute-1-tablet-push { left: 8.3333333333333%; }
+	.cute-2-tablet-push { left: 16.666666666667%; }
+	.cute-3-tablet-push { left: 25%; }
+	.cute-4-tablet-push { left: 33.333333333333%; }
+	.cute-5-tablet-push { left: 41.666666666667%; }
+	.cute-6-tablet-push { left: 50%; }
+	.cute-7-tablet-push { left: 58.333333333333%; }
+	.cute-8-tablet-push { left: 66.666666666667%; }
+	.cute-9-tablet-push { left: 75%; }
+	.cute-10-tablet-push { left: 83.333333333333%; }
+	.cute-11-tablet-push { left: 91.666666666667%; }
+
+	.cute-1-tablet-pull { right: 8.3333333333333%; }
+	.cute-2-tablet-pull { right: 16.666666666667%; }
+	.cute-3-tablet-pull { right: 25%; }
+	.cute-4-tablet-pull { right: 33.333333333333%; }
+	.cute-5-tablet-pull { right: 41.666666666667%; }
+	.cute-6-tablet-pull { right: 50%; }
+	.cute-7-tablet-pull { right: 58.333333333333%; }
+	.cute-8-tablet-pull { right: 66.666666666667%; }
+	.cute-9-tablet-pull { right: 75%; }
+	.cute-10-tablet-pull { right: 83.333333333333%; }
+	.cute-11-tablet-pull { right: 91.666666666667%; }
+
+	.center-tablet {
+		margin-left: auto;
+		margin-right:auto;
+		float:none !important;
+	}
+	.uncenter-tablet {
+		margin-left: 0;
+		margin-right: 0;
+		float:left !important;
+	}
+	.uncenter-tablet.right {
+		float:right !important;
+	}
+
+	[class*='cute-'].tablet-reset {
+		margin-left: 0;
+		margin-right: 0;
+		left: auto;
+		right: auto;
+		float: left; }
+}
+/* Grid classes for wide Tablet / Laptop to Small Desktop Size */
+
+@media only screen and (min-width: 62em) {
+	.cute-1-laptop { width: 8.3333333333333%; }
+	.cute-2-laptop { width: 16.666666666667%; }
+	.cute-3-laptop { width: 25%; }
+	.cute-4-laptop { width: 33.333333333333%; }
+	.cute-5-laptop { width: 41.666666666667%; }
+	.cute-6-laptop { width: 50%; }
+	.cute-7-laptop { width: 58.333333333333%; }
+	.cute-8-laptop { width: 66.666666666667%; }
+	.cute-9-laptop { width: 75%; }
+	.cute-10-laptop { width: 83.333333333333%; }
+	.cute-11-laptop { width: 91.666666666667%; }
+	.cute-12-laptop { width: 100%; }
+
+	/* offset for tablet laptop widths */
+	.cute-0-laptop-offset { margin: 0; }
+	.cute-1-laptop-offset { margin-left: 8.3333333333333%; }
+	.cute-2-laptop-offset { margin-left: 16.666666666667%; }
+	.cute-3-laptop-offset { margin-left: 25%; }
+	.cute-4-laptop-offset { margin-left: 33.333333333333%; }
+	.cute-5-laptop-offset { margin-left: 41.666666666667%; }
+	.cute-6-laptop-offset { margin-left: 50%; }
+	.cute-7-laptop-offset { margin-left: 58.333333333333%; }
+	.cute-8-laptop-offset { margin-left: 66.666666666667%; }
+	.cute-9-laptop-offset { margin-left: 75%; }
+	.cute-10-laptop-offset { margin-left: 83.333333333333%; }
+	.cute-11-laptop-offset { margin-left: 91.666666666667%; }
+
+	.cute-1-laptop-push { left: 8.3333333333333%; }
+	.cute-2-laptop-push { left: 16.666666666667%; }
+	.cute-3-laptop-push { left: 25%; }
+	.cute-4-laptop-push { left: 33.333333333333%; }
+	.cute-5-laptop-push { left: 41.666666666667%; }
+	.cute-6-laptop-push { left: 50%; }
+	.cute-7-laptop-push { left: 58.333333333333%; }
+	.cute-8-laptop-push { left: 66.666666666667%; }
+	.cute-9-laptop-push { left: 75%; }
+	.cute-10-laptop-push { left: 83.333333333333%; }
+	.cute-11-laptop-push { left: 91.666666666667%; }
+
+	.cute-1-laptop-pull { right: 8.3333333333333%; }
+	.cute-2-laptop-pull { right: 16.666666666667%; }
+	.cute-3-laptop-pull { right: 25%; }
+	.cute-4-laptop-pull { right: 33.333333333333%; }
+	.cute-5-laptop-pull { right: 41.666666666667%; }
+	.cute-6-laptop-pull { right: 50%; }
+	.cute-7-laptop-pull { right: 58.333333333333%; }
+	.cute-8-laptop-pull { right: 66.666666666667%; }
+	.cute-9-laptop-pull { right: 75%; }
+	.cute-10-laptop-pull { right: 83.333333333333%; }
+	.cute-11-laptop-pull { right: 91.666666666667%; }
+
+	.center-laptop {
+		margin-left: auto;
+		margin-right:auto;
+		float:none !important;
+	}
+	.uncenter-laptop {
+		margin-left: 0;
+		margin-right: 0;
+		float:left !important;
+	}
+	.uncenter-laptop.right {
+		float:right !important;
+	}
+
+	[class*='cute-'].laptop-reset {
+		margin-left: 0;
+		margin-right: 0;
+		left: auto;
+		right: auto;
+		float: left; }
+}
+
+/* Grid Classes for Large Desktop Size */
+.show-desktop { display: none; }
+@media only screen and (min-width: 75em) {
+	.cute-1-desktop { width: 8.3333333333333%; }
+	.cute-2-desktop { width: 16.666666666667%; }
+	.cute-3-desktop { width: 25%; }
+	.cute-4-desktop { width: 33.333333333333%; }
+	.cute-5-desktop { width: 41.666666666667%; }
+	.cute-6-desktop { width: 50%; }
+	.cute-7-desktop { width: 58.333333333333%; }
+	.cute-8-desktop { width: 66.666666666667%; }
+	.cute-9-desktop { width: 75%; }
+	.cute-10-desktop { width: 83.333333333333%; }
+	.cute-11-desktop { width: 91.666666666667%; }
+	.cute-12-desktop { width: 100%; }
+
+	/* offset for tablet laptop widths */
+	.cute-0-desktop-offset { margin: 0; }
+	.cute-1-desktop-offset { margin-left: 8.3333333333333%; }
+	.cute-2-desktop-offset { margin-left: 16.666666666667%; }
+	.cute-3-desktop-offset { margin-left: 25%; }
+	.cute-4-desktop-offset { margin-left: 33.333333333333%; }
+	.cute-5-desktop-offset { margin-left: 41.666666666667%; }
+	.cute-6-desktop-offset { margin-left: 50%; }
+	.cute-7-desktop-offset { margin-left: 58.333333333333%; }
+	.cute-8-desktop-offset { margin-left: 66.666666666667%; }
+	.cute-9-desktop-offset { margin-left: 75%; }
+	.cute-10-desktop-offset { margin-left: 83.333333333333%; }
+	.cute-11-desktop-offset { margin-left: 91.666666666667%; }
+
+	.cute-1-desktop-push { left: 8.3333333333333%; }
+	.cute-2-desktop-push { left: 16.666666666667%; }
+	.cute-3-desktop-push { left: 25%; }
+	.cute-4-desktop-push { left: 33.333333333333%; }
+	.cute-5-desktop-push { left: 41.666666666667%; }
+	.cute-6-desktop-push { left: 50%; }
+	.cute-7-desktop-push { left: 58.333333333333%; }
+	.cute-8-desktop-push { left: 66.666666666667%; }
+	.cute-9-desktop-push { left: 75%; }
+	.cute-10-desktop-push { left: 83.333333333333%; }
+	.cute-11-desktop-push { left: 91.666666666667%; }
+
+	.cute-1-desktop-pull { right: 8.3333333333333%; }
+	.cute-2-desktop-pull { right: 16.666666666667%; }
+	.cute-3-desktop-pull { right: 25%; }
+	.cute-4-desktop-pull { right: 33.333333333333%; }
+	.cute-5-desktop-pull { right: 41.666666666667%; }
+	.cute-6-desktop-pull { right: 50%; }
+	.cute-7-desktop-pull { right: 58.333333333333%; }
+	.cute-8-desktop-pull { right: 66.666666666667%; }
+	.cute-9-desktop-pull { right: 75%; }
+	.cute-10-desktop-pull { right: 83.333333333333%; }
+	.cute-11-desktop-pull { right: 91.666666666667%; }
+
+	.center-desktop {
+		margin-left: auto;
+		margin-right:auto;
+		float:none !important;
+	}
+	.uncenter-desktop {
+		margin-left: 0;
+		margin-right: 0;
+		float:left !important;
+	}
+	.uncenter-desktop.right {
+		float:right !important;
+	}
+
+	[class*='cute-'].desktop-reset {
+		margin-left: 0;
+		margin-right: 0;
+		left: auto;
+		right: auto;
+		float: left; }
+}
+
+@media only screen and (max-width: 30em){
+	.cute-100 { width:100%;}
+}
+
+/* Make visible or hidden block elements */
+
+.show-phone, .show-tablet, .show-laptop, .show-desktop { display: none !important; }
+.hide-phone { display: block !important; }
+
+@media only screen and (max-width: 47.938em) {
+	.phone { width: 100%; }
+	.hide-phone { display:none !important; }
+	.show-phone { display: block !important; }
+}
+
+@media only screen and (min-width: 48em) and (max-width: 61.938em) {
+	.hide-tablet { display: none !important; }
+	.show-tablet { display: block !important; }
+}
+
+@media only screen and (min-width: 62em) and (max-width: 74.938em) {
+	.hide-laptop { display: none !important; }
+	.show-laptop { display: block !important; }
+}
+
+@media only screen and (min-width: 75em) {
+	.hide-desktop { display: none !important; }
+	.show-desktop { display: block !important; }
+}
+
+/* make images responsive */
+.responsive-img {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+/* Optional Extras */
+
+/* something to keep tables horizontal with scroll when on small screen
+*  Useful if table is wide. Set media query to point where table needs it
+*/
+/*
+@media only screen and (max-width: 47.938em) {
+  .table-respond {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+}
+*/
+
