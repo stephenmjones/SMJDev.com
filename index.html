@@ -2,12 +2,17 @@
 <html lang="en">
 
 	<head>
-		<meta charset="utf-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
 
+		<meta charset="utf-8"/>
+		<title>Web Development Portfolio - Stephen Jones</title>
+		<meta name="description" content="Online portfolio for Stephen Jones, a web developer located in Nashville, TN.">
+		<meta name="author" content="Stephen Jones">
+		<meta name="keywords" content="web, developer, development, portfolio, stephen jones, nashville, front end, back end, full stack,">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7CRoboto:400,700,900" rel="stylesheet">
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -15,15 +20,13 @@
 		<link rel="mask-icon" href="/safari-pinned-tab.svg">
 		<meta name="theme-color" content="#6699cc">
 
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700%7CRoboto:400,700,900" rel="stylesheet">
-		<title>Stephen Jones - Web Developer - Nashville, TN</title>
 	</head>
 
 	<body>
 
 		<header>
-			<img class="navlogo" src="img/logo.png" alt="Stephen's Logo"/>
-			<p class="brandtype">Stephen Jones</p>
+			<img id="navlogo" src="img/logo.png" alt="Stephen's Logo"/>
+			<p id="navlogotype">Stephen Jones</p>
 			<span id="navpull" class="fa fa-bars" aria-hidden="true"></span>
 			<nav>
 				<ul>
@@ -35,20 +38,20 @@
 			</nav>
 		</header>
 
-		<div id="home" class="height-fix">
+		<section id="home" class="height-fix">
 			<div class="center">
-				<h2>Hey there! I'm<span>Stephen Jones</span>A web developer for hire located in Nashville, TN.</h2>
+				<h1>Hey there! I'm<span>Stephen Jones</span>A web developer for hire located in Nashville, TN.</h1>
 				<a class="pagedownbutton" href="#about">
 					Learn more about me
 					<span class="fa fa-chevron-down pagedownarrow" aria-hidden="true"></span>
 				</a>
 			</div>
-		</div>
+		</section>
 
-		<div id="about" class="container center">
+		<section id="about" class="container">
 			<div class="row">
 				<div class="cute-100 cute-12-phone cute-12-tablet cute-12-laptop">
-					<h4 class="headinglines">About Me</h4>
+					<h2 class="headinglines">About Me</h2>
 				</div>
 			</div>
 			<div class="row">
@@ -90,14 +93,14 @@
 					</a>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div id="projects" class="container center">
+		<section id="projects" class="container">
 
 
 			<div class="row">
 				<div class="cute-100 cute-12-phone cute-12-tablet cute-12-laptop">
-					<h4 class="headinglines">Projects</h4>
+					<h2 class="headinglines">Projects</h2>
 				</div>
 			</div>
 
@@ -157,29 +160,30 @@
 					</a>
 				</div>
 			</div>
-		</div>
+		</section>
 
-		<div id="contact" class="container center height-fix">
+		<section id="contact" class="container">
 			<div class="row">
 				<div class="cute-100 cute-12-phone cute-12-tablet cute-12-laptop">
-					<h4 class="headinglines">Contact</h4>
+					<h2 class="headinglines">Contact</h2>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="cute-100 cute-12-phone cute-6-tablet center-tablet cute-4-laptop center-laptop">
-					<form id="contactform" name="contact" method="post">
+
+					<form id="contactform" method="post" action="">
 						<fieldset>
 							<label for="name">Name:</label>
-							<input type="text" name="name" id="name" size="30" value="" required/>
+							<input type="text" name="name" id="name" required>
 
 							<label for="email">Email:</label>
-							<input type="text" name="email" id="email" size="30" value="" required/>
+							<input type="email" name="email" id="email" required>
 
 							<label for="message">Message:</label>
 							<textarea name="message" id="message" required></textarea>
 
-							<input id="submit" type="submit" name="submit" value="Send"/>
+							<button id="submit" type="submit">Send</button>
 						</fieldset>
 					</form>
 				</div>
@@ -187,7 +191,7 @@
 
 			<div class="row">
 				<div class="cute-100">
-					<p class="headinglines">Find me on</p>
+					<h5 class="headinglines">Find me on</h5>
 				</div>
 				<div class="cute-3-phone">
 					<a class="sociallinks" href="https://www.facebook.com/profile.php?id=100013130144855">
@@ -219,7 +223,7 @@
 					<p class="copyright">Copyright &copy; 2016</p>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 		<script src="scripts/javascript.js"></script>

@@ -7,24 +7,12 @@ $(function(){
 
 ////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Toggles Visibility of Nav Links When Link is Clicked
 $(function(){
-	$('nav').children("li").children("li").children("a").click(function() {
+	$('nav').children("ul").children("li").children("a").click(function() {
 		$('nav').slideToggle();
 	});
 });
 
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Shows/Collapses Nav Links Based on Screen Size
-//$(window).resize(function(){
-//	var w = $(window).width();
-//	if(w > 480 && $('#navmenu').is(':hidden')) {
-//		$('#navmenu').removeAttr('style');
-//	}
-//	if(w < 480 && $('#navmenu').is(':visible')) {
-//		$('#navmenu').removeAttr('style');
-//	}
-//});
-
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Nav Active Link Functions
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Scrolls Page When Anchor Link is Clicked
 $(document).ready(function () {
 
 
@@ -42,15 +30,17 @@ $(document).ready(function () {
 		var target = this.hash;
 		$target = $(target);
 		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top - $('header').height()
+			'scrollTop': $target.offset().top - $('header').height() + 1
 		}, 800, 'swing', function () {
 			window.location.hash = target;
+			$('html').animate({ 'scrollTop': $target.offset().top - $('header').height() + 1 }, 0);
 			$(document).on("scroll", onScroll);
 		});
 	});
 });
 
-function onScroll(event){
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Changes Active Link When Page Is Scrolled
+function onScroll(){
 	var scrollPosition = $(document).scrollTop();
 	$('nav a').each(function () {
 		var currentLink = $(this);
