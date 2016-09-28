@@ -304,6 +304,20 @@ label {
 	border-radius: .3125rem;
 }
 
+#formmessage {
+	height: 200px;
+	width: 100%;
+	background-color: yellow;
+}
+
+#formmessage.success {
+	background-color: green;
+}
+
+#formmessage.error {
+	background-color: red;
+}
+
 .sociallinks {
 	display: inline-block;
 	height: 2.5rem;
