@@ -30,10 +30,10 @@ $(document).ready(function () {
 		var target = this.hash;
 		$target = $(target);
 		$('html, body').stop().animate({
-			'scrollTop': $target.offset().top - $('header').height() + 1
+			'scrollTop': $target.offset().top//- $('header').height() + 1
 		}, 800, 'swing', function () {
 			window.location.hash = target;
-			$('html').animate({ 'scrollTop': $target.offset().top - $('header').height() + 1 }, 0);
+			$('html').animate({ 'scrollTop': $target.offset().top/* - $('header').height() + 1*/ }, 0);
 			$(document).on("scroll", onScroll);
 		});
 	});

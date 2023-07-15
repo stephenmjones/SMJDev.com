@@ -21,21 +21,23 @@ body {
 	font: normal 400 1rem/1.618 "Roboto";
 	color: rgba(60,60,60,1);
 	text-align: center;
+	background-color: #f6f6f6;
 }
 
 a {color: rgba(67, 116, 156, 1)}
 
 h1 {
-	font: normal 300 1.5rem/1.618 "Roboto Condensed";
+	font: normal 300 1.125rem/1.618 "Roboto";
 	color: rgba(255,255,255,1);
 	text-transform: uppercase;
-	text-shadow: .125rem .125rem .125rem rgba(0,0,0,.5);
+	/*text-shadow: .125rem .125rem .125rem rgba(0,0,0,.5);*/
 }
 
 h1 span {
 	display: block;
 	font: normal 700 2rem/1.618 "Roboto";
 	text-transform: uppercase;
+	color: rgba(255,255,255,1);
 }
 
 h2 {
@@ -60,24 +62,34 @@ h5 {
 
 .pagedownbutton {
 	display: inline-block;
-	margin: .625rem 0 .625rem 0;
+	width: 100%;
+	max-width: 25rem;
+	margin: .625rem 0;
 	padding: .3125rem .75rem;
+	border: 2px solid rgba(67, 116, 156, 1);
 	font: normal 700 .8rem/1.40625rem Roboto;
-	color: rgba(255, 255, 255, 1);
 	text-decoration: none;
 	text-transform: uppercase;
-	background-color: rgba(67, 116, 156, 1);
-	border-radius: 1.875rem;
 }
 
-a.pagedownbutton {
+
+a.pagedownbutton:hover {
+	background-color: rgba(67, 116, 156, 1);
 	color: rgba(255,255,255,1);
-	text-decoration: none;
+}
+
+#home a.pagedownbutton {
+	border-color: rgba(255,255,255,1);
+	color: rgba(255,255,255,1);
+}
+
+#home a.pagedownbutton:hover {
+	background-color: rgba(255,255,255,1);
+	color: rgba(67, 116, 156, 1);
 }
 
 .pagedownarrow {
 	display: block !important;
-	color: #fff !important;
 	text-shadow: 0 0 .125rem rgba(0, 0, 0, .2);
 }
 
@@ -110,10 +122,11 @@ a.pagedownbutton {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header & Nav Styles */
 
 header {
+	display: none;
 	position: fixed;
 	width: 100%;
 	z-index: 10;
-	background-color: rgba(67, 116, 156, 1);
+	/*background-color: rgba(67, 116, 156, 1);*/
 }
 
 #navlogo {
@@ -172,9 +185,10 @@ nav a.active {
 	display: table;
 	height: auto;
 	width: 100%;
-	padding: 0 .625rem 0 .625rem;
-	background: url('../img/deck4.jpg') no-repeat 60% 60%;
-	background-size: cover;
+	padding: 0 1.25rem;
+	/*background: url('../img/deck4.jpg') no-repeat 50% 50%;*/
+	/*background-size: cover;*/
+	background-color: rgba(67, 116, 156, 1);
 }
 
 @media only screen and (min-height: 15em) {
@@ -188,6 +202,11 @@ nav a.active {
 	vertical-align: middle;
 }
 
+#logo {
+	height: 6rem;
+
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ About Page Styles*/
 
 #about {
@@ -195,9 +214,12 @@ nav a.active {
 	background-color: rgba(230,230,230,1);
 }
 
-#about h2, #about span, #about h4{
+
+
+#about h2, #about span.fa-2x, #about h4{
 	color: rgba(67, 116, 156, 1);
 }
+
 
 #about p {
 	margin-bottom: 1rem;
@@ -267,10 +289,6 @@ nav a.active {
 	background-color: rgba(0,0,0,.2);
 }
 
-fieldset {
-	border: 0;
-}
-
 input, textarea {
 	display: block;
 	width: 100%;
@@ -302,20 +320,6 @@ label {
 	background-color: rgba(198, 212, 223, 1);
 	color: rgba(67, 116, 156, 1);
 	border-radius: .3125rem;
-}
-
-#formmessage {
-	height: 200px;
-	width: 100%;
-	background-color: yellow;
-}
-
-#formmessage.success {
-	background-color: green;
-}
-
-#formmessage.error {
-	background-color: red;
 }
 
 .sociallinks {
@@ -356,7 +360,7 @@ label {
 [class*='cute-'] {
 	float: left;
 	position: relative;
-	padding: 0.65rem;
+	padding: .625rem 1.25rem;
 	width:100%;
 }
 
